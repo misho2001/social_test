@@ -1,1 +1,2 @@
-# social app made only by ai-s used firebase , kotlin
+# social app made only by ai. used firebase , kotlin
+app pictures in images folder
