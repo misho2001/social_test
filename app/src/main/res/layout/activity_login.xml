@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="24dp" android:gravity="center">
+    <TextView android:text="SocialApp — შესვლა" android:textSize="24sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etEmail" android:hint="Email" android:inputType="textEmailAddress"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+    <EditText android:id="@+id/etPassword" android:hint="პაროლი" android:inputType="textPassword"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnLogin" android:text="შესვლა"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+    <Button android:id="@+id/btnGoRegister" android:text="რეგისტრაცია"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="16dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center_vertical">
+        <TextView android:text="News Feed" android:textSize="22sp" android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnProfile" android:text="პროფილი"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <EditText android:id="@+id/etPost" android:hint="რას ფიქრობ?"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    <Button android:id="@+id/btnPost" android:text="გამოქვეყნება"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerPosts"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12dp"/>
+</LinearLayout>

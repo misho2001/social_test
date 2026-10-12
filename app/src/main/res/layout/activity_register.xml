@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="24dp" android:gravity="center">
+    <TextView android:text="რეგისტრაცია" android:textSize="24sp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etName" android:hint="სახელი"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+    <EditText android:id="@+id/etEmail" android:hint="Email" android:inputType="textEmailAddress"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etPassword" android:hint="პაროლი" android:inputType="textPassword"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/btnRegister" android:text="დარეგისტრირება"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+</LinearLayout>
