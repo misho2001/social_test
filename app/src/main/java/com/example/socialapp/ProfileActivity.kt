@@ -16,7 +16,7 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val uid = auth.currentUser?.uid ?: return finish()
-        val ref = FirebaseDatabase.getInstance().getReference("users").child(uid)
+        val ref = FirebaseDatabase.getInstance("https://social-app-82a54-default-rtdb.europe-west1.firebasedatabase.app").getReference("users").child(uid)
 
         ref.get().addOnSuccessListener { snap ->
             binding.etName.setText(snap.child("name").getValue(String::class.java) ?: "")

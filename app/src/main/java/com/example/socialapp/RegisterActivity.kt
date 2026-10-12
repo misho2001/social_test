@@ -26,7 +26,7 @@ class RegisterActivity : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email, pass)
                 .addOnSuccessListener { res ->
                     val uid = res.user!!.uid
-                    FirebaseDatabase.getInstance().getReference("users").child(uid)
+                    FirebaseDatabase.getInstance("https://social-app-82a54-default-rtdb.europe-west1.firebasedatabase.app").getReference("users").child(uid)
                         .setValue(mapOf("name" to name, "email" to email, "bio" to ""))
                         .addOnCompleteListener { Toast.makeText(this, "რეგისტრაცია დასრულდა!", Toast.LENGTH_SHORT).show(); finish() }
                 }

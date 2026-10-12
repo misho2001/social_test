@@ -16,7 +16,7 @@ import com.google.firebase.database.*
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val auth = FirebaseAuth.getInstance()
-    private val db = FirebaseDatabase.getInstance().getReference("posts")
+    private val db = FirebaseDatabase.getInstance("https://social-app-82a54-default-rtdb.europe-west1.firebasedatabase.app").getReference("posts")
     private val posts = mutableListOf<Pair<String, String>>() // author : text
     private lateinit var adapter: PostAdapter
 
